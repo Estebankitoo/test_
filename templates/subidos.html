@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TABLA DE USUARIOS Y ACCIONES</h1>
+  <div class="container mt-5">
+    <table class="table table-bordered table-striped">
+      <thead class="">
+        <tr border="1px">
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for mensajes in mensaje %}
+        <tr>
+          <td>{{ mensajes.0 }}</td>
+          <td>{{ mensajes.1 }}</td>
+          <td>{{ mensajes.2 }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>    
+    </table>
+  
+</body>
+</html>
